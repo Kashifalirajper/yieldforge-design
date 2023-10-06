@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+body {
+  background: url(./assets/images/bg.jpeg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: EloquiaDisplayBold;
+  src: url(/assets/font/Eloquia/Typekiln\ -\ EloquiaDisplay-ExtraBold.otf);
+}
+
+/* Override the default Bootstrap navbar-toggler-icon to be white */
+
+.navbar {
+  padding-top: 20px !important;
+}
+/* Large Screens */
+@media (min-width: 992px) {
+  .navbar.navbar-collapsed {
+    background-color: transparent !important; /* Transparent background on large screens */
+  }
+}
+
+/* Small Screens */
+@media (max-width: 991.98px) {
+  .navbar.navbar-collapsed {
+    background-color: #201b1b !important; /* Desired background color on small screens */
+  }
+}
+
+/* On Small Screens */
+@media (max-width: 991.98px) {
+}
+
+/* On Large Screens */
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: row;
+  }
+}
+.nav-link {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  padding: 0 20px !important;
+  line-height: auto;
+}
+
+.gradient-btn {
+  /* padding: 20px 60px; */
+  font-family: "Inter", sans-serif;
+  border: none;
+  outline: none;
+  position: relative;
+  border-radius: 30px 30px 30px 30px; /* make the button rounded only on the horizontal ends */
+  background: linear-gradient(to bottom, #c41019, #f4aa1c);
+
+  cursor: pointer;
+  z-index: 1;
+  width: 150px;
+  height: 40px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+.gradient-btn::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  border-radius: 30px 30px 30px 30px; /* match the button's border radius */
+  background-color: #201b1b;
+  z-index: -1;
+  transition: 200ms;
+}
+.gradient-btn::after {
+  content: attr(data);
+  font-size: 16px;
+  background: linear-gradient(to bottom, #c41019, #f4aa1c);
+  -webkit-background-clip: text;
+  color: transparent;
+  border-radius: 30px 30px 30px 30px; /* match the button's border radius */
+  transition: 200ms;
+}
+.gradient-btn:hover::before {
+  opacity: 50%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.gradient-btn:hover::after {
+  color: white;
+}
+
+.gradient-btn-fill {
+  /* padding: 20px 60px; */
+  border: none;
+  outline: none;
+  position: relative;
+  border-radius: 30px 30px 30px 30px; /* make the button rounded only on the horizontal ends */
+  background: linear-gradient(
+    94.17deg,
+    #c6151a -9.81%,
+    #d87031 47.16%,
+    #e7c046 96.39%
+  );
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 1;
+  width: 150px;
+  height: 40px;
+  font-family: Inter;
+  font-weight: 100;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.gradient-btn-fill:hover {
+  background: #201b1b;
+  border: 2px solid #d87031;
+}
+
+/* banner */
+.combined-section {
+  background-image: url("/assets/images/bannerBG.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+/* Styles for the banner section */
+.banner-section {
+  height: 500px; /* You can adjust this value as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Assuming you want white text on a dark image. Adjust as needed. */
+}
+
+.content-container {
+  text-align: center;
+}
+
+.banner-heading {
+  font-family: EloquiaDisplayBold;
+  font-size: 2.5em; /* Adjust as needed */
+  margin-bottom: 15px; /* Space between heading and subtext */
+}
+
+.gradient-text {
+  background-image: linear-gradient(
+    180deg,
+    #c40e18 0%,
+    #d45d2c 47.92%,
+    #e7bf46 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.banner-subtext {
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  font-size: 1em; /* Adjust as needed */
+  margin-bottom: 30px; /* Space between subtext and buttons */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-row {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  justify-content: center;
+}
+
+/* Style the buttons (You can also use Bootstrap button classes if you're using Bootstrap) */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
