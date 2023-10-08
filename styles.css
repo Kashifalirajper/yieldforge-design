@@ -405,6 +405,100 @@ ul > li {
   color: white;
 }
 
+
+/* team  */
+
+/* Team section css  */
+
+.team-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+  text-align: center;
+  width: 100%;
+}
+
+.team-section .team-heading-container h2{
+  font-family: Eloquia Display;
+font-size: 56px;
+font-weight: 800;
+line-height: 67px;
+letter-spacing: 0em;
+color: #ffffff;
+}
+
+.team-section .team-heading-container p{
+  font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+color: #ffffff;
+}
+
+.team-section .team-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.team-container .team-member{
+  background: #FFFFFF1A;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.team-member h3{
+  background: linear-gradient(to bottom, #e6bd45, #d45d2c, #c51119);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-top: 83px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  font-family: Detacher;
+  margin-bottom: 0;
+}
+
+.team-member .position{
+  font-size: 16px;
+color: #9A9A9A;
+font-family: 400;
+line-height: 24px;
+font-size: "Poppins", sans-serif;
+}
+
+.team-member p{
+  font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+color: #ffffff;
+}
+
+.team-member img{
+  width: 166px;
+  height: 166px;
+  position: absolute;
+  top: -83px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* on small screen  */
+@media (max-width: 800.98px) {
+  .team-section .team-container{
+    flex-direction: column;
+    gap: 123px;
+  }
+}
+
+
 /* roadmap */
 .roadmap {
   padding: 50px 0;
