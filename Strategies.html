@@ -83,4 +83,17 @@
     </div>
 </body>
 
+<script>
+    var navbar = document.getElementById('navbarSupportedContent');
+
+    navbar.addEventListener('show.bs.collapse', function () {
+        document.querySelector('.navbar').classList.add('navbar-collapsed');
+    });
+
+    navbar.addEventListener('hide.bs.collapse', function () {
+        document.querySelector('.navbar').classList.remove('navbar-collapsed');
+    });
+
+</script>
+
 </html>
