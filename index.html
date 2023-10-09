@@ -15,14 +15,14 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="homePage">
     <div class="combined-section">
         <div class="container">
             <!-- Navbar -->
             <div>
                 <nav class="navbar navbar-expand-lg bg-transparent navbar-fixed-top">
                     <div class="container-fluid">
-                        <a class="navbar-brand text-white" href="#"><img src="/assets/images/mask-group.png" alt=""></a>
+                        <a class="navbar-brand text-white" href="/"><img src="/assets/images/mask-group.png" alt=""></a>
                         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,7 @@
                         pools and much more, generating yield across all of DeFi</p>
                     <div class="button-row d-flex flex-wrap">
                         <button class="gradient-btn-fill">Enter App</button>
-                        <button class="gradient-btn" data="Learn More"></button>
+                        <button class="gradient-btn" data="Learn More" onclick="redirectToStrategies()"></button>
                     </div>
                 </div>
             </div>
@@ -211,6 +211,12 @@
     navbar.addEventListener('hide.bs.collapse', function () {
         document.querySelector('.navbar').classList.remove('navbar-collapsed');
     });
+
+
+
+  function redirectToStrategies() {
+    window.location.href = "/strategies.html";
+  }
 
 
 </script>

@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
-body {
+#homePage {
   background: url(./assets/images/bg.jpeg);
   background-size: cover;
+}
+#strategiesPage {
+  background: url(./assets/images/secondBg.png);
+  background-size: cover;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
@@ -25,6 +32,10 @@ ul > li {
 @font-face {
   font-family: EloquiaDisplayBold;
   src: url(/assets/font/Eloquia/Typekiln\ -\ EloquiaDisplay-ExtraBold.otf);
+}
+@font-face {
+  font-family: Detacher;
+  src: url(/assets/font/detacher/Detacher-Regular.otf);
 }
 
 /* Override the default Bootstrap navbar-toggler-icon to be white */
@@ -76,7 +87,6 @@ ul > li {
   z-index: 1;
   width: 150px;
   height: 40px;
-  font-family: Inter;
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
@@ -131,7 +141,8 @@ ul > li {
   z-index: 1;
   width: 150px;
   height: 40px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
+
   font-weight: 100;
   line-height: 22px;
   letter-spacing: 0em;
@@ -405,12 +416,11 @@ ul > li {
   color: white;
 }
 
-
 /* team  */
 
 /* Team section css  */
 
-.team-section{
+.team-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -419,25 +429,26 @@ ul > li {
   width: 100%;
 }
 
-.team-section .team-heading-container h2{
+.team-section .team-heading-container h2 {
   font-family: Eloquia Display;
-font-size: 56px;
-font-weight: 800;
-line-height: 67px;
-letter-spacing: 0em;
-color: #ffffff;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 67px;
+  letter-spacing: 0em;
+  color: #ffffff;
 }
 
-.team-section .team-heading-container p{
-  font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-color: #ffffff;
+.team-section .team-heading-container p {
+  font-family: "Inter", sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #ffffff;
 }
 
-.team-section .team-container{
+.team-section .team-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -445,14 +456,14 @@ color: #ffffff;
   width: 100%;
 }
 
-.team-container .team-member{
-  background: #FFFFFF1A;
+.team-container .team-member {
+  background: #ffffff1a;
   border-radius: 20px;
   padding: 20px;
   position: relative;
 }
 
-.team-member h3{
+.team-member h3 {
   background: linear-gradient(to bottom, #e6bd45, #d45d2c, #c51119);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -464,24 +475,24 @@ color: #ffffff;
   margin-bottom: 0;
 }
 
-.team-member .position{
+.team-member .position {
   font-size: 16px;
-color: #9A9A9A;
-font-family: 400;
-line-height: 24px;
-font-size: "Poppins", sans-serif;
+  color: #9a9a9a;
+  font-family: 400;
+  line-height: 24px;
+  font-size: "Poppins", sans-serif;
 }
 
-.team-member p{
-  font-family: Inter;
-font-size: 18px;
-font-weight: 400;
-line-height: 27px;
-letter-spacing: 0em;
-color: #ffffff;
+.team-member p {
+  font-family: "Inter", sans-serif;
+
+  font-size: 18px;
+  font-weight: 400;
+  /* line-height: 27px; */
+  color: #ffffff;
 }
 
-.team-member img{
+.team-member img {
   width: 166px;
   height: 166px;
   position: absolute;
@@ -492,12 +503,11 @@ color: #ffffff;
 
 /* on small screen  */
 @media (max-width: 800.98px) {
-  .team-section .team-container{
+  .team-section .team-container {
     flex-direction: column;
     gap: 123px;
   }
 }
-
 
 /* roadmap */
 .roadmap {
@@ -563,8 +573,8 @@ div.road-image img.mobile-roadmap {
   display: block;
   width: 100%;
   position: relative;
-  background: rgba(255, 255, 255, 0.10);
-backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
   padding: 150px 25px 50px 25px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -644,27 +654,25 @@ backdrop-filter: blur(25px);
   font-size: 16px;
   margin-bottom: 0.5em;
   color: #fff;
-
 }
 .footer .column .column-title:not(:first-child) {
   margin-top: 1em;
 }
 
-.footerNavList{
+.footerNavList {
   display: flex;
   flex-direction: column;
 }
 
-.footerNavList a{
+.footerNavList a {
   text-decoration: none;
   color: #fff;
   font-family: "Inter", sans-serif;
   line-height: 2;
 }
 
-.footerNavList a:hover{
+.footerNavList a:hover {
   color: #d35d2c;
-
 }
 
 .illustration {
@@ -704,13 +712,12 @@ a.button {
   letter-spacing: 5px;
   color: #000;
   text-align: center;
-  
 }
 
 @media only screen and (max-width: 990px) and (min-width: 200px) {
-.footer{
-  margin-top: 50%;
-}
+  .footer {
+    margin-top: 50%;
+  }
   .footer .inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -724,7 +731,7 @@ a.button {
     order: 2; /* Places logo after start-learning and before other columns */
     margin-bottom: 20px; /* Some spacing after the logo */
   }
-  
+
   /* Ensure other columns come after the logo */
   .column.is-nav {
     order: 3;
@@ -737,7 +744,6 @@ a.button {
   }
   .section-title {
     font-size: 30px;
-
   }
   .section-sub-heading {
     font-size: 18px;
@@ -758,7 +764,88 @@ a.button {
   }
 }
 
-.lastFooter{
+.lastFooter {
   text-align: center;
   color: #ffffff;
+}
+
+/* second page  */
+
+/* Styles for the banner section */
+.banner-section2 {
+  margin-top:100px;
+  height: 100vh; /* Subtracting the navbar's height */
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  color: white; /* Assuming you want white text on a dark image. Adjust as needed. */
+}
+
+.strategiesContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers direct children horizontally */
+  justify-content: center; /* Centers direct children vertically */
+  margin-bottom: 20px;
+}
+
+.strategiesContent h2 {
+  font-family: EloquiaDisplayBold;
+  font-size: 2.2em; /* Adjust as needed */
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  word-spacing: 5px;
+}
+.strategiesContent h3 {
+  font-family: EloquiaDisplayBold;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: left; /* This is your desired style, no !important needed unless there's a specificity conflict */
+  align-self: flex-start; /* This will ensure the h3 is aligned to the start regardless of parent's align-items */
+}
+
+.values-section.strategiesContent h3 {
+  text-align: left !important;
+}
+
+.strategiesContent p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: white;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 27px;
+}
+
+.gradient-btn-large {
+  /* padding: 20px 60px; */
+  border: none;
+  outline: none;
+  position: relative;
+  border-radius: 10px; /* make the button rounded only on the horizontal ends */
+  background: linear-gradient(
+    94.17deg,
+    #c6151a -9.81%,
+    #d87031 47.16%,
+    #e7c046 96.39%
+  );
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  font-family: EloquiaDisplayBold;
+  font-size: 1.5em;
+  padding: 20px 20px;
+  text-align: left;
+  font-weight: 100;
+  letter-spacing: 0em;
+}
+
+.gradient-btn-large:hover {
+  cursor: pointer;
 }
