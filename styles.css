@@ -32,10 +32,12 @@ ul > li {
 @font-face {
   font-family: EloquiaDisplayBold;
   src: url(/assets/font/Eloquia/Typekiln\ -\ EloquiaDisplay-ExtraBold.otf);
+  font-display: swap;
 }
 @font-face {
   font-family: Detacher;
   src: url(/assets/font/detacher/Detacher-Regular.otf);
+  font-display: swap;
 }
 
 /* Override the default Bootstrap navbar-toggler-icon to be white */
